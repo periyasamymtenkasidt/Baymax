@@ -378,6 +378,8 @@ import os
 import json
 import numpy as np
 import joblib
+import os
+os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
 import tensorflow as tf
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
